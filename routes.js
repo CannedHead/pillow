@@ -20,21 +20,15 @@ app.post('/contact',function(req, res) {
 	}
  	
 	var user = new User({
-		name:        	  req.body.nombre,
-		email:        	  req.body.email
+		name:req.body.nombre,
+		email:req.body.email
 
 	});
 
 	user.save(function(err) {
 		if(!err) {
-			console.log('New user has been created');
-
-			var file = __dirname + '/downloads/doc.pdf';
-			res.download(file);
-
-		
-
-			res.redirect('/'); 
+			console.log('New user has been created');		
+			res.redirect("https://s3.amazonaws.com/cannedhead.pillow/doc.pdf");
 		} else {
 			console.log('ERROR: ' + err);
 			res.redirect('/'); 

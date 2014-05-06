@@ -4,25 +4,39 @@ html(lang="en")
     meta(charset="utf-8")
     title Consult Your Pillow 
 
-    meta(name="description",content="Compensate - Siembra un arbol")
+    meta(name="description",content="pillow consulting -sigue tus suenos")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
     meta(property="og:type" content="website")
     meta(property="og:title" content="Siembra un arbol.")
     meta(property="og:image" content="http://s5.postimg.org/nt23g0hjb/logo.png")
-    meta(property="og:description" content="Registrate y sembraremos un arbol por ti.")
-    meta(property="og:url" content="http://www.apopori.org")
+    meta(property="og:description" content="Suena con nosotros.")
+    meta(property="og:url" content="http://www.consultyourpillow.com")
 
     link(href="favicon.png" rel="shortcut icon" type="image/png")  
     link(href="/css/bootstrap.css", rel="stylesheet")
+    link( rel="stylesheet" href="/css/normalize.min.css" type="text/css")
+    link( rel="stylesheet" href="/css/grid.min.css" type="text/css" )
+    link( rel="stylesheet" href="/css/style.min.css" type="text/css")
     link(href="/css/styles.css", rel="stylesheet")
+
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js", type="text/javascript")
+    script(src="/js/bootstrap.min.js", type="text/javascript")
+    script(type="text/javascript" src="/js/jquery.min.js")
+    script(type="text/javascript" src="/js/jquery-ui.min.js")
+    script(type="text/javascript" src="/js/form.min.js")
+    script(type="text/javascript" src="/js/wide-video.js")    
     
   body
-    img.background(src="/img/back.png")
+    
+    div#video(style="z-index:-3") 
+    div#images()
+
     img.col-xs-12.col-md-3.logo.center-block(src="/img/pillow_logo.svg")
     p.hero Try everything, Consult your Pillow
-    p.col-md-4.col-md-offset-4.intro "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    p.col-md-4.col-md-offset-4.intro.copy "Lorem ipsum dol
+    p.col-md-4.col-md-offset-4.intro Inscríbete ahora mismo y recibe GRATIS el ebook: "Silicon Valley en Carne Propia. 7 Insights que DEBES CONOCER" Pillow Consulting es la empresa que cree en los emprendedores. Te apoyamos en asesorías y formación en Creatividad, Innovación y Emprendimiento. ¡Nunca te rindas, aun no lo has intentado todo! 
+    p.col-md-4.col-md-offset-4.intro.copy Try Everything. Consult Your Pillow !
+
     .container
         .row
             .col-md-4.col-md-offset-4
@@ -34,7 +48,78 @@ html(lang="en")
                         input.form-control(type="email" name="email" placeholder="E-mail" required)
                     br
                     .form-group
-                    input.boton.form-control(type="submit" value="DESCARGAR E-BOOK")
-           
-    script(src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js", type="text/javascript")
-    script(src="/js/bootstrap.min.js", type="text/javascript")
+                    input.boton.form-control(type="submit" value="DESCARGAR E-BOOK" )
+        
+        script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+        script.
+            $(document).ready(function() {
+                $("#loader").fadeOut();
+                $("#loading").fadeOut();
+            });
+        script.
+            
+            // Remove no-script background image
+            document.body.style.backgroundImage = 'none';
+
+            // Avoid cropped background when the page has y-overflow
+            fixBackgroundHeight();
+
+            window.onresize = function()
+            {
+                var wh = $(window).height();
+                var ww = $(window).width();
+                var ratio = wh/ww;
+
+                // Avoid cropped background when the page has y-overflow
+                fixBackgroundHeight();
+
+                // Resize the background items
+                if(!mobileCheck())
+                {
+                    sizeVideoBg(ratio);
+                    sizeVideo(ratio);
+                }
+                else
+                {
+                    sizeImage(ratio);
+                }
+            };
+
+            // Load first video
+            loadMediaFirst();
+
+            // Waits till the page ends loading
+            $(window).bind('load', function()
+            {
+                // Avoid cropped background when the page has y-overflow
+                fixBackgroundHeight();
+
+                // Start to load the assets
+                loadMediaSecond();
+
+                setTimeout("first_slide_ocurred = true;", 4300);
+
+                setTimeout(function()
+                {
+                    if(first_video_loaded && second_video_loaded)
+                    {
+                        console.log('Enough bandwidth to load videos');
+                        enough_bw = true;
+                    }
+                    else
+                    {
+                        $('video').html('');
+                    }
+                }, 4600);
+
+                if(!mobileCheck())
+                {
+                    loopVideo();
+                }
+                else
+                {
+                    loopImage();
+                }
+            });
+        
+         
