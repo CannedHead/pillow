@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'sanserifficregular';
+    src: url('/css/fonts/sanseriffic-webfont.eot');
+    src: url('/css/fonts/sanseriffic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/sanseriffic-webfont.woff') format('woff'),
+         url('/css/fonts/sanseriffic-webfont.ttf') format('truetype'),
+         url('/css/fonts/sanseriffic-webfont.svg#sanserifficregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'utsaahregular';
+    src: url('/css/fonts/utsaah-webfont.eot');
+    src: url('/css/fonts/utsaah-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/utsaah-webfont.woff') format('woff'),
+         url('/css/fonts/utsaah-webfont.ttf') format('truetype'),
+         url('/css/fonts/utsaah-webfont.svg#utsaahregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.logo {
+
+float: none;
+margin: 10% auto 0;
+
+}
+
+.background {
+position:absolute;
+top: 0; 
+left: 0;
+height: 100%; 
+width: 100%; 
+overflow: hidden;
+margin: 0;
+padding: 0;
+z-index: -1; 
+
+}
+
+.hero{
+font-family: 'sanserifficregular';
+font-size: 1.2em;
+color: #BBBDC0;
+letter-spacing: 0.1em;
+text-align: center ; 
+
+}
+
+
+.intro{
+font-family: 'utsaahregular';
+font-size: 1.2em;
+color: #BBBDC0;
+
+text-align: center ; 
+margin-top: 2%; 
+text-align: justify;
+
+}
+
+.formulario{
+font-family: 'utsaahregular';
+font-size: 1.2em;
+color: #BBBDC0;
+margin-top: 2%; 
+text-align: justify;
+
+}
+
+.boton{
+
+	font-family: 'sanserifficregular';
+    padding: 5px 64px;
+    color: #A5A5A5;
+    background: none repeat scroll 0% 0% #FFF;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: 0.1em;
+    margin-bottom: 5px; 
+}
+
+.copy{
+
+    margin-top: 0px; 
+}
