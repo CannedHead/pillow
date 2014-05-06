@@ -10,9 +10,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'utsaahregular';
     src: url('/css/fonts/utsaah-webfont.eot');
@@ -26,7 +23,9 @@
 }
 
 body{
+    font-family: 'utsaahregular';
     height: 100%;
+
 }
 
 /*-- Loader --*/
