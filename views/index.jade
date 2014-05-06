@@ -30,7 +30,7 @@ html(lang="en")
   body
     
     div#video(style="z-index:-3") 
-    div#images()
+    div#images(style="z-index:-3")
 
     img.col-xs-12.col-md-3.logo.center-block(src="/img/pillow_logo.svg")
     p.hero Try everything, Consult your Pillow
@@ -51,12 +51,13 @@ html(lang="en")
                     input.boton.form-control(type="submit" value="DESCARGAR E-BOOK" )
         
         script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+        script(src="//www.google-analytics.com/analytics.js" async="")
+            
         script.
             $(document).ready(function() {
                 $("#loader").fadeOut();
                 $("#loading").fadeOut();
             });
-        script.
             
             // Remove no-script background image
             document.body.style.backgroundImage = 'none';
@@ -121,5 +122,13 @@ html(lang="en")
                     loopImage();
                 }
             });
-        
-         
+            
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-50689634-1', 'consultyourpillow.com');
+            ga('send', 'pageview');
+
+                     
