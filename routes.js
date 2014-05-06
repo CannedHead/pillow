@@ -1,6 +1,5 @@
 var User = require('./models/landing.js');
 var http = require('http');
-var fs = require('fs');
 
 module.exports = function(app) {
 
