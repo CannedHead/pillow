@@ -57,7 +57,7 @@ body{
 .logo {
 
 float: none;
-margin: 2% auto 0;
+margin: 1% auto 0;
 
 }
 
@@ -107,9 +107,9 @@ text-align: justify;
 .boton{
 
 	font-family: 'sanserifficregular';
-    color: #A5A5A5;
+    color: #C5196E;
     background: none repeat scroll 0% 0% #FFF;
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: center;
     text-transform: uppercase;
     line-height: normal;
@@ -121,3 +121,11 @@ text-align: justify;
 
     margin-top: 0px; 
 }
+
+.texto{
+
+    color: #ffffff;
+    font-size: 0.8em; 
+    font-family: 'sanserifficregular';
+    letter-spacing: 0.1em;
+    font-weight: 900;

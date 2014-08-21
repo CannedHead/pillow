@@ -27,7 +27,9 @@ app.post('/contact',function(req, res) {
 	user.save(function(err) {
 		if(!err) {
 			console.log('New user has been created');		
-			res.redirect("https://s3.amazonaws.com/cannedhead.pillow/doc.pdf");
+			//res.redirect("https://s3.amazonaws.com/cannedhead.pillow/doc.pdf");
+			res.redirect('/'); 
+
 		} else {
 			console.log('ERROR: ' + err);
 			res.redirect('/'); 

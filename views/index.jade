@@ -2,7 +2,7 @@ doctype html
 html(lang="en")
   head
     meta(charset="utf-8")
-    title Consult Your Pillow 
+    title PILLOW EDUCATION 
 
     meta(name="description",content="pillow consulting -sigue tus suenos")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -32,15 +32,30 @@ html(lang="en")
     div#video(style="z-index:-3") 
     div#images(style="z-index:-3")
 
-    img.col-xs-12.col-md-3.logo.center-block(src="/img/pillow_logo.svg")
-    p.hero Try everything, Consult your Pillow
-    p.col-md-4.col-md-offset-4.intro Inscríbete ahora mismo y recibe GRATIS el ebook: "Silicon Valley en Carne Propia. 7 Insights que DEBES CONOCER" Pillow Consulting es la empresa que cree en los emprendedores. Te apoyamos en asesorías y formación en Creatividad, Innovación y Emprendimiento. ¡Nunca te rindas, aun no lo has intentado todo! 
-    p.col-md-4.col-md-offset-4.intro.copy Try Everything. Consult Your Pillow !
+    img.col-xs-12.col-md-3.logo.center-block(src="/img/pillow_logo-02.svg")
+    p.hero(style='font-weight:900') Education will set you FREE
+    p.col-md-4.col-md-offset-4.intro Pillow Education es una propuesta que busca apoyar a instituciones educativas a cumplir su misión formadora, tan importante en el mundo de hoy, otorgándole a los docentes, padres de familia y estudiantes conocimientos y herramientas en las temáticas de:
+
+    .col-md-4.col-md-offset-4(style='text-align:center')
+
+        h2.texto(style='margin-top: 0%') TRABAJO EN EQUIPO
+        hr
+        h2.texto(style='margin-top: -2%') CREATIVIDAD
+        hr
+        h2.texto(style='margin-top: -2%')  INNOVACIÓN
+        hr
+        h2.texto(style='margin-top: -2%') EMPRENDIMIENTO
+        hr
+
+    p.col-md-4.col-md-offset-4.intro(style='margin-top: -0.5%') El objetivo principal de Pillow Education es desarrollar en los estudiantes estás habilidades, buscando que ellas les permitan cumplir sus metas y enfrentarse al mundo que está por venir.
+    
+
 
     .container
         .row
-            .col-md-4.col-md-offset-4
+            .col-md-6.col-md-offset-3
                 form.formulario(method="post" action= "/contact")
+                     
                     .form-group
                         input.form-control(type="text" name="nombre" placeholder="Nombre" required)
                     br
@@ -48,7 +63,9 @@ html(lang="en")
                         input.form-control(type="email" name="email" placeholder="E-mail" required)
                     br
                     .form-group
-                    input.boton.form-control(type="submit" value="DESCARGAR E-BOOK" )
+                    input.boton.form-control(type="submit" value="RECIBE  MÁS INFORMACIÓN" )
+
+                    
         
         script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
         script(src="//www.google-analytics.com/analytics.js" async="")
