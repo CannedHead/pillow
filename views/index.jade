@@ -34,26 +34,37 @@ html(lang="en")
 
     img.col-xs-12.col-md-3.logo.center-block(src="/img/pillow_logo-02.svg")
     p.hero(style='font-weight:900;color:font-color:#4F4F50') Education will set you FREE
-    p.col-md-4.col-md-offset-4.intro Pillow Education es una propuesta que busca apoyar a instituciones educativas a cumplir su misión formadora, tan importante en el mundo de hoy, otorgándole a los docentes, padres de familia y estudiantes conocimientos y herramientas en las temáticas de:
+    p.col-md-6.col-md-offset-3.intro(style= '') Somos una organización que cree que la educación libera. Creemos que formar individuos capaces de afrontar los retos del mundo que está por venir es lo que garantizará una sociedad con mayor riqueza para todos. La formación y la educación son las bases para el desarrollo de este país, de esta forma Pillow apoya desde sus dos líneas de negocio: Pillow Education y Pillow Company al desarrollo de Colombia, latinoamérica y el mundo.
 
-    .col-md-4.col-md-offset-4(style='text-align:center')
+    .col-md-12
+        .col-md-3.col-md-offset-3
+            img.col-md-12.logo(src="/img/pillow_logo-02.svg")
+            hr(style = 'border-color:rgba(164, 164, 164, 1)' )
+        .col-md-3
+            img.col-md-12.logo(src="/img/pillow_logo-02.svg")
+            hr(style = 'border-color:rgba(164, 164, 164, 1)' )
+    .col-md-12
+        .col-md-3.col-md-offset-3
+            p.intro  Formamos empresas que buscan desarrollar y potenciar las competencias humanas esenciales de las organizaciones del nuevo siglo y convertirlas en organizaciones ambidiestras a través del desarrollo del trabajo en equipo, la creatividad, la innovación y el emprendimiento.
 
-        h2.texto(style='margin-top: 0%') TRABAJO EN EQUIPO
-        hr(style = 'border-color:#C5196E' )
-        h2.texto(style='margin-top: -2%') CREATIVIDAD
-        hr(style = 'border-color:#C5196E' )
-        h2.texto(style='margin-top: -2%') INNOVACIÓN
-        hr(style = 'border-color:#C5196E' )
-        h2.texto(style='margin-top: -2%') EMPRENDIMIENTO
-        hr(style = 'border-color:#C5196E' )
-
-    p.col-md-4.col-md-offset-4.intro(style='margin-top: -0.5%') El objetivo principal de Pillow Education es desarrollar en los estudiantes estás habilidades, buscando que ellas les permitan cumplir sus metas y enfrentarse al mundo que está por venir.
-    
-
+        .col-md-3
+            p.intro Apoyamos instituciones educativas a cumplir su misión formadora, tan importante en el mundo de hoy, otorgándole a los docentes, padres de familia y estudiantes conocimientos y herramientas en las temáticas de trabajo en equipo, la creatividad, la innovación y el emprendimiento.
+    .col-md-12
+        .col-md-3.col-md-offset-3
+            input.boton.form-control(style='margin-bottom: 3%' type="submit" value="Descarga el brochure" )  
+        .col-md-3
+            input.boton.form-control(style='margin-bottom: 3%' type="submit" value="Descarga el brochure" )  
+    .col-md-12
+        .col-md-6.col-md-offset-3
+            hr(style = 'border-color:rgba(164, 164, 164, 1)' )
+ 
 
     .container
         .row
-            .col-md-6.col-md-offset-3
+            .col-md-6.col-md-offset-3(style='margin-top:2%;')
+                
+                p.intro Recibe mas informacion
+                
                 form.formulario(method="post" action= "/contact")
                      
                     .form-group
