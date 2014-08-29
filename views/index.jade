@@ -49,9 +49,9 @@ html(lang="en")
     
     .col-md-12
         .col-md-3.col-md-offset-2
-            a.btn-lg.link.boton.form-control(style='margin-bottom:3%;background:#609935; text-decoration:none' target="blank"  href = 'https://db.tt/CRzfdG2A' download='PillowCompany.pdf')  Descarga el brochure  
+            a.btn.btn-lg.boton.col-md-12(style=' margin-bottom:3%;background:#609935; text-decoration:none' target="blank"  href = 'https://db.tt/CRzfdG2A' download='PillowCompany.pdf')  DESCARGA EL BROCHURE 
         .col-md-3.col-md-offset-2
-            a.btn-lg.link.boton.form-control(style='margin-bottom: 3%; text-decoration:none' target="blank2"  href = 'https://db.tt/av9mgxuV' download='PillowEducation.pdf')  Descarga el brochure  
+            a.btn.btn-lg.boton.col-md-12(style=' margin-bottom: 3%; text-decoration:none' target="blank2"  href = 'https://db.tt/av9mgxuV' download='PillowEducation.pdf')  Descarga el brochure  
 
     .col-md-12(style='margin-top:2%;')
         .col-md-8.col-md-offset-2
@@ -60,9 +60,12 @@ html(lang="en")
 
     .container
         .row
-            .col-md-6.col-md-offset-3(style='margin-top:2%;')
+            .col-md-12
+                 p.intro(style='font-size: 2.11em; font-weight: 900; text-align: center;letter-spacing: 4px;') INSCRÍBETE Y RECIBE GRÁTIS EL E-BOOK: 
+            .col-md-8.col-md-offset-2(style='margin-top:-5%;')
                 
-                p.intro Recibe mas informacion
+               
+                p.intro(style='color:#FF81E7;  font-size: 2em; font-weight: 900; text-align: center;letter-spacing: 4px;') "7 CLAVES DE SILICON VALLEY"
                 
                 form.formulario(method="post" action= "/contact")
                      
@@ -73,13 +76,41 @@ html(lang="en")
                         input.form-control(type="email" name="email" placeholder="E-mail" required)
                     br
                     .form-group
-                    input.boton.form-control(style='margin-bottom: 3% ; background:#C9C9C9; color:#333;' type="submit" value="RECIBE  MÁS INFORMACIÓN" )
+                    input.boton.form-control(style='font-weight:900; height:50px; margin-bottom: 3% ; background:#C9C9C9; color:#000;' type="submit" value="DESGARGA EL E-BOOK: 7 CLAVES DE SILICON VALLEY" )
 
-                    p(style='text-align:center; color:#fff') Con el apoyo de: 
+                    p(style=' color:#fff') Con el apoyo de: 
                     a(href='http://www.imagine.cc' target="blank")
                         img.col-xs-12.col-md-5.logo.center-block(src="/img/Logo_Imagine.png")
                         br 
                         br
+    .col-md-12(style= 'border-top: solid; background:#000; margin-top: 1%; opacity:0.5;')
+
+        img.col-xs-12.col-md-3.logo.center-block(style = 'opacity:0.9;' src="/img/pillow_logo-03.svg")
+        
+        .col-md-12
+            p.hero(style='font-weight:900;color:font-color:#4F4F50;letter-spacing: 10px;') CONTÁCTANOS
+        .col-md-3.col-md-offset-3
+            p(style='text-align:center; letter-spacing: 5px;') education@pillow.com.co
+            
+        .col-md-3
+            p(style='text-align:center; letter-spacing: 5px;') company@pillow.com.co
+
+
+        .col-md-12
+
+            .col-md-2.col-md-offset-5(style='margin-top:1%; margin-bottom:3%;')
+                .col-sm-3.col-md-offset-1
+                    a(href='http://www.facebook.com/pillowedu' target="blank")
+                        img(src="/img/face.svg" style='height:30px;')
+                .col-sm-3.col-md-offset-1
+                    a(href='http://instagram.com/pilloweducation' target="blank")
+                        img(src="/img/insta.svg" style='height:30px;')
+                .col-sm-3.col-md-offset-1
+                    a(href='http://twitter.com/PillowEdu' target="blank")
+                        img(src="/img/twitter.svg" style='height:30px;')
+
+           
+        
 
                     
         

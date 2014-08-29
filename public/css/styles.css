@@ -119,13 +119,12 @@ text-align: justify;
 
 	font-family: 'sanserifficregular';
     color: #FFF;
-    background: none repeat scroll 0% 0% #C5196E;
+    background: #C5196E;
     font-size: 0.8em;
     text-align: center;
     text-transform: uppercase;
-    line-height: normal;
     letter-spacing: 0.1em;
-    margin-bottom: 5px; 
+    
 }
 
 .copy{
