@@ -58,8 +58,21 @@ body{
 
 float: none;
 margin: 1% auto 0;
+width:100%;
 
 }
+
+.logo1{
+float: none;
+margin: 1% auto 0;
+
+
+}
+
+
+
+
+
 
 .background {
 position:absolute;
@@ -76,7 +89,7 @@ z-index: -1;
 
 .hero{
 font-family: 'sanserifficregular';
-font-size: 1em;
+font-size: 0.9em;
 color: #E7E7E7;
 letter-spacing: 0.1em;
 text-align: center;
@@ -120,10 +133,11 @@ text-align: justify;
 	font-family: 'sanserifficregular';
     color: #FFF;
     background: #C5196E;
-    font-size: 0.8em;
+    font-size: ;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    width: 100%; 
     
 }
 
@@ -154,3 +168,60 @@ text-align: justify;
     text-decoration: none !important; 
 
 }
+
+@media (max-width: 1120px){
+    .btn-lg{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px){
+    
+    .boton{
+        width: 90%;
+        margin-left: 5%
+    }
+    .logo1{
+        ;width: 50%
+    }
+    .logo{
+        width: 100%;
+
+    }
+
+    .imagine{
+        width: 30%;
+    }
+    
+
+}
+
+
+@media (max-width: 767px){
+
+    .
+}
+
+
+
+@media (max-width: 480px){
+    .logo{
+        width: 100%;
+    }
+    .boton{
+        width: 90%;
+        margin-left: 5%
+    }
+
+    .logo1{
+        ;width: 100%
+    }
+    .imagine{
+        width: 45%;
+    }
+
+    
+}
+
+}
+
