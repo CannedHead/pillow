@@ -39,9 +39,8 @@
 body{
     font-family: 'utsaahregular';
     height: 100%;
-    background-color: #000; 
+    background-color: #000 !important; 
     
-
 }
 
 
@@ -89,7 +88,7 @@ margin: 1% auto 0;
 
 .landing{
     background-image:url("http://s25.postimg.org/bopsz3h1b/back.png") !important;
-    background-color: #000;
+    background-color: #000 !important;
 }
 
 
@@ -254,6 +253,7 @@ text-align: justify;
 @media (max-width: 1365px){
     .landing{
     background-image:url("http://s25.postimg.org/ek7hjpaf3/back1365.png") !important;
+    background-color: #000 !important;
 
 }
     .formWidth{
@@ -266,6 +266,7 @@ text-align: justify;
 @media (max-width: 992px){
     .landing{
     background-image:url("http://s25.postimg.org/ek7hjpaf3/back1365.png") !important;
+    background-color: #000 !important;
 
 }
     .formWidth{
@@ -299,6 +300,7 @@ text-align: justify;
    .landing{
     background-image:url("http://s25.postimg.org/l6pjz52pr/back540.png") !important;
     background-size: 480px auto !important; 
+    background-color: #000 !important;
     }
 
     .descuento {
@@ -327,6 +329,7 @@ text-align: justify;
     .landing{
     background-image:url("http://s25.postimg.org/l6pjz52pr/back540.png") !important;
     background-size: 540px auto;
+    background-color: #000 !important;
 }
 
 .descuento {
@@ -356,6 +359,7 @@ text-align: justify;
     .landing{
     background-image:url("http://s25.postimg.org/l6pjz52pr/back540.png") !important;
     background-size: 540px auto !important;
+    background-color: #000 !important;
 }
 
 .descuento {
@@ -384,6 +388,7 @@ text-align: justify;
     .landing{
     background-image:url("http://s25.postimg.org/l6pjz52pr/back540.png") !important;
     background-size: 430px auto !important;
+    background-color: #000 !important;
 }
 }
 
@@ -391,6 +396,7 @@ text-align: justify;
     .landing{
     background-image:url("http://s25.postimg.org/l6pjz52pr/back540.png") !important;
     background-size: 390px auto !important;
+    background-color: #000 !important;
 }
 }
 
@@ -398,5 +404,6 @@ text-align: justify;
     .landing{
     background-image:url("http://s25.postimg.org/l6pjz52pr/back540.png") !important;
     background-size: 350px auto !important;
+    background-color: #000 !important;
 }
 }
