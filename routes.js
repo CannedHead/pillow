@@ -7,6 +7,13 @@ app.get('/', function(req, res) {
 	res.render('index'); 
 });
 
+app.get('/Taller_oct4', function(req, res) {
+	res.render('landing'); 
+});
+
+
+
+
 app.post('/contact',function(req, res) {
 
 	if (req.body.nombre === undefined) {

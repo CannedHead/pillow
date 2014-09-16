@@ -29,80 +29,36 @@ html(lang="en")
     
   body
     
-    div#video(style="z-index:-3; opacity:0.9;") 
-    div#images(style="z-index:-3")
+    .col-md-3.col-md-offset-8
+        .col-md-12.formTaller
+            p(style="margin-top:6%;")  REGÍSTRATE Y RECIBE UN DESCUENTO DEL 40%
+        .col-md-12.formBody
 
-    img.logo1.col-md-5.center-block(style = 'opacity:0.9;' src="/img/pillow_logo-03.svg")
-    p.hero(style='font-weight:900;color:font-color:#4F4F50') Education will set you FREE
-    
-    .col-md-12(style= 'background:#fff;opacity: 0.4; margin-top: 2% ')
-        p.col-md-8.col-md-offset-2.intro2(style= 'text-align: center;') Somos una organización que cree que la educación libera. Creemos que formar individuos capaces de afrontar los retos del mundo que está por venir es lo que garantizará una sociedad con mayor riqueza para todos. La formación y la educación son las bases para el desarrollo de este país, de esta forma Pillow apoya desde sus dos líneas de negocio: Pillow Education y Pillow Company al desarrollo de Colombia, latinoamérica y el mundo.
+            .col-md-12(style="margin-top:10%;")
 
-    
-    .col-md-3.col-md-offset-2
-        img.logo(src="/img/pillow_logo-01.svg")
-        hr.logo(style = 'border-color:rgba(164, 164, 164, 1)' )
-        p.intro(style='text-align:center;')  Formamos empresas que buscan desarrollar y potenciar las competencias humanas esenciales de las organizaciones del nuevo siglo y convertirlas en organizaciones ambidiestras a través del desarrollo del trabajo en equipo, la creatividad, la innovación y el emprendimiento.
-        hr
-        a.btn.btn-lg.boton(style=' margin-bottom:3%;background:#609935; text-decoration:none' target="blank"  href = 'https://db.tt/CRzfdG2A' download='PillowCompany.pdf')  DESCARGA EL BROCHURE 
-
-    .col-md-3.col-md-offset-2
-        img.logo(src="/img/pillow_logo-02.svg")
-        hr.logo(style = 'border-color:rgba(164, 164, 164, 1)' )
-        p.intro(style='text-align:center;') Apoyamos instituciones educativas a cumplir su misión formadora, importante en el mundo de hoy, otorgándole a los docentes, padres de familia y estudiantes conocimientos y herramientas en las temáticas de trabajo en equipo, la creatividad, la innovación y el emprendimiento.
-        hr
-        a.btn.btn-lg.boton.col-md-12(style=' margin-bottom: 3%; text-decoration:none' target="blank2"  href = 'https://db.tt/av9mgxuV' download='PillowEducation.pdf')  Descarga el brochure  
-
-    .col-md-12(style='margin-top:2%;')
-        .col-md-8.col-md-offset-2
-            hr(style = 'border-color:rgba(164, 164, 164, 1)' )
- 
-
-    .container
-        .row
-            .col-md-12
-                 p.intro(style='font-size: 2.11em; font-weight: 900; text-align: center;letter-spacing: 4px;') INSCRÍBETE Y RECIBE GRÁTIS EL E-BOOK: 
-            .col-md-8.col-md-offset-2(style='margin-top:-5%;')
-                
-               
-                p.intro(style='color:#FF81E7;  font-size: 2em; font-weight: 900; text-align: center;letter-spacing: 4px;') "7 CLAVES DE SILICON VALLEY"
-                
-                form.formulario(method="post" action= "/contact")
-                     
-                    .form-group
+                pform.formulario(method="post" action= "/contact")
+                         
+                    .form-group.op
                         input.form-control(type="text" name="nombre" placeholder="Nombre" required)
                     br
-                    .form-group
+                    .form-group.op
                         input.form-control(type="email" name="email" placeholder="E-mail" required)
                     br
+                    .form-group.op
+                        input.form-control(type="numbers" name="Celular" placeholder="Celular" required)
+                    br
                     .form-group
-                    input.boton.form-control(style='font-weight:900; height:50px; margin-bottom: 3% ; background:#C9C9C9; color:#000;' type="submit" value="DESGARGA EL E-BOOK" )
+                    input.boton.form-control.op(style='font-family:"camptonsemibold";font-size:1em; height:80px;margin-bottom: 3% ; background:#EC008C; color:#fff;' type="submit" value="$16.800" )
+        .col-md-12(style='text-align: right; opacity:0.5; font-family:"utsaahregular";')
+            a(href='http://pillow.com.co' target="blank")
+                p www.pillow.com.co
+            p(style='margin-top:-8%;') educatio@pillow.com.co
+            p(style='margin-top:-8%;') (+57) 311 865 8561 - (+57) 320 287 0823 
 
-                    
-            .col-md-4.col-md-offset-4(style='text-align:center')
-                p(style=' color:#fff') Con el apoyo de: 
-                a(href='http://www.imagine.cc' target="blank" )
-                    img.col-md-12.imagine(src="/img/Logo_Imagine.png")
-                                
 
-    .col-md-12(style= ' background:#000; margin-top: 4%; opacity:0.5;')
-
-        br
-        .col-md-12
-            p.hero.footer(style='font-weight:900;color:font-color:#4F4F50;letter-spacing: 10px;') CONTÁCTANOS
-        .col-md-4.col-md-offset-4
-            p(style='text-align:center; letter-spacing: 5px;') education@pillow.com.co
-            p(style='text-align:center; letter-spacing: 5px;') company@pillow.com.co
-
-        .col-md-8.col-md-offset-2(style='text-align:center')
-            a(href='http://www.facebook.com/pillowedu' target="blank")
-                img(src="/img/face.svg" style='height:30px;margin-bottom:3%')
-            a(href='http://instagram.com/pilloweducation' target="blank")
-                img(src="/img/insta.svg" style='height:30px; margin-left:5%;margin-bottom:3%')
-            a(href='http://twitter.com/PillowEdu' target="blank")
-                img(src="/img/twitter.svg" style='height:30px;margin-left:5%;margin-bottom:3%')
-            br
-        br
+   
+            
+        
 
    
 
@@ -195,7 +151,4 @@ html(lang="en")
 
             ga('create', 'UA-50689634-1', 'pillow.com.co');
             ga('send', 'pageview');
-
-
-
 

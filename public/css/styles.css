@@ -19,14 +19,31 @@
          url('/css/fonts/utsaah-webfont.svg#utsaahregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
+@font-face {
+    font-family: 'camptonsemibold';
+    src: url('/css/fonts/campton.semibold-webfont.eot');
+    src: url('/css/fonts/campton.semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/campton.semibold-webfont.woff') format('woff'),
+         url('/css/fonts/campton.semibold-webfont.ttf') format('truetype'),
+         url('/css/fonts/campton.semibold-webfont.svg#camptonsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
 
 body{
     font-family: 'utsaahregular';
     height: 100%;
+    background-image:url("/img/back.png") !important;
 
 }
+
+
 
 /*-- Loader --*/
 #loader {
@@ -70,8 +87,29 @@ margin: 1% auto 0;
 }
 
 
+.formTaller{
+    height:80px; 
+    background:#fff; 
+    border-bottom: solid #EC008C;
+    margin-top: 40% !important; 
+    font-family: 'camptonsemibold'; 
+    text-align: center; 
+    font-size: 1em; 
+    color:rgba(81, 81, 81, 0.6);
+    line-height: 100%;
 
 
+}
+
+.formBody{
+    height:400px; 
+    background:rgba(255, 255, 255, 0.2); 
+    
+}
+
+.op{
+  margin-top: 1%; 
+}
 
 
 .background {
@@ -171,7 +209,7 @@ text-align: justify;
 
 @media (max-width: 1120px){
     .btn-lg{
-        font-size: 14px;
+        font-size: 14px; 
     }
 }
 

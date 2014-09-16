@@ -144,7 +144,7 @@ input {
     height: 50px;
     padding: 0px 2px;
     border-width: 0px 0px 1px;
-    border-style: none none solid;
+    border-style: none none none;
     border-color: -moz-use-text-color -moz-use-text-color #A5A5A5;
     -moz-border-top-colors: none;
     -moz-border-right-colors: none;
@@ -304,7 +304,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  color: #fff;
   text-decoration: none;
 }
 a:hover,
@@ -1708,12 +1708,12 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 50px;
   padding: 6px 12px;
   font-size: 15px;
   line-height: 1.42857143;
   color: #fff;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.1);
   background-image: none;
   
   
