@@ -349,7 +349,40 @@ text-align: justify;
 
 }
 
+@media (max-width: 700px){
+    .landing{
+    background-image:url("http://s25.postimg.org/ek7hjpaf3/back1365.png") !important;
+    background-color: #000 !important;
+    background-size: 992px auto;
+}
+.formWidth{
+        width: 100% !important;
+        margin-left: 0% !important;
+    }
 
+.descuento {
+    margin-top:6%;
+    padding-top: 6%; 
+}
+
+.formBody{
+    height:400px; 
+    background:rgba(255, 255, 255, 0.9); 
+    
+}
+
+.form-control2{
+    background-color: #fff !important;
+    color:#888 !important;
+}
+
+.formTaller{
+    margin-top: 85% !important;
+}
+
+
+
+}
 
 @media (max-width: 540px){
     .landing{
