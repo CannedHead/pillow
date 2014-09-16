@@ -176,7 +176,6 @@ text-align: justify;
 font-family: 'utsaahregular';
 font-size: 1.2em;
 color: #C5196E;
-margin-top: 2%; 
 text-align: justify;
 
 }
@@ -345,6 +344,7 @@ text-align: justify;
 
 .form-control2{
     background-color: #fff !important;
+    color:#888 !important;
 }
 
 .formTaller{
@@ -375,6 +375,7 @@ text-align: justify;
 
 .form-control2{
     background-color: #fff !important;
+    color:#888 !important;
 }
 
 .formTaller{
