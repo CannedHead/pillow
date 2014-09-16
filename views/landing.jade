@@ -29,27 +29,27 @@ html(lang="en")
     
   body.landing
     
-    .col-md-3.col-md-offset-8
+    .col-md-3.col-md-offset-8.formWidth
         .col-md-12.formTaller
-            p(style="margin-top:6%;")  REGÍSTRATE Y RECIBE UN DESCUENTO DEL 40%
+            p.descuento REGÍSTRATE Y RECIBE UN DESCUENTO DEL 25%
         .col-md-12.formBody
 
-            .col-md-12(style="margin-top:10%;")
+            .col-md-12
 
                 pform.formulario(method="post" action= "/contact")
-                         
-                    .form-group.op
-                        input.form-control(type="text" name="nombre" placeholder="Nombre" required)
-                    br
-                    .form-group.op
-                        input.form-control(type="email" name="email" placeholder="E-mail" required)
-                    br
-                    .form-group.op
-                        input.form-control(type="numbers" name="Celular" placeholder="Celular" required)
+                    br    
+                    .form-group
+                        input.form-control.form-control2(type="text" name="nombre" placeholder="Nombre" required)
                     br
                     .form-group
-                    input.boton.form-control.op(style='font-family:"camptonsemibold";font-size:1em; height:80px;margin-bottom: 3% ; background:#EC008C; color:#fff;' type="submit" value="$16.800" )
-        .col-md-12(style='text-align: right; opacity:0.5; font-family:"utsaahregular";')
+                        input.form-control.form-control2(type="email" name="email" placeholder="E-mail" required)
+                    br
+                    .form-group
+                        input.form-control.form-control2(type="numbers" name="Celular" placeholder="Celular" required)
+                    br
+                    .form-group
+                    input.boton.form-control.op(style='font-family:"camptonsemibold";font-size:1em; height:80px;margin-bottom: 3% ; background:#EC008C; color:#fff;' type="submit" value="$15.000" )
+        .col-md-12.foot
             a(href='http://pillow.com.co' target="blank")
                 p www.pillow.com.co
             p(style='margin-top:-8%;') educatio@pillow.com.co
