@@ -1,0 +1,153 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title IMAGINE CAMP ANTIOQUIA 2014 By Pillow | #{title}
+
+    meta(name="description",content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    link(href="favicon.png" rel="shortcut icon" type="image/png")  
+    link(href="/css/bootstrap.css", rel="stylesheet")
+    link(href="/css/sticky-footer.css", rel="stylesheet")
+    link(href="/css/stylesMed.css", rel="stylesheet")
+    
+  body
+      
+    navbar.line.navbar-fixed-top
+        .container-fluid
+            .navbar-header
+               
+                .pulll-left
+                    a.toggle-menu.toggle-btn#menu-btn
+                        span
+                    
+               
+    <!-- Off canvas Menu -->
+    nav.off-canvas-menu.off-canvas-menu-closed#off-canvas-menu
+        .col-md-12.logo-menu       
+            img.img-responsive(src="/img/log.png" alt="Mefira commerce")
+        .col-md-12
+            .list-group.category-list.gray 
+                a.list-group-item(href="/med") CAMPAMENTO
+                a.list-group-item(href="/libertapp") LIBERTAPP
+                a.list-group-item(href="/tourist") THE TOURISM GAME
+                a.list-group-item(href="/hv") HAV Tourism
+                a.list-group-item(href="/fly") FLYLINE 
+                a.list-group-item(href="/sexxi") SEXXI
+                a.list-group-item(href="/pub") THE PUBLISH COMPANY
+                a.list-group-item(href="/cof") COFFAGER
+                a.list-group-item(href="/jai") JAI ANTIOQUIA
+                
+        
+    
+    block content
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    footer.footer
+        .full.groupTittle2
+          .col--12(style='margin-top:1.4%')
+            p APOYADO POR
+
+        .full(style='background-color:#fff;')
+
+          .container(style='margin-top:3%')
+            .col-xs-12
+                .col-sm-2.info.col-sm-offset-1
+                  .col-xs-12(style='margin-top:15%')
+                    img.img-responsive.center-block.icono(style = 'height:auto; width: 180px; margin-top:25%;' src="/img/Logo_Imagine2.png", alt="")
+
+                .col-sm-2.info
+                  .col-xs-12(style='margin-top:15%')
+                    img.img-responsive.center-block.icono(src="/img/anti.png", alt="")
+                  
+
+                .col-sm-2.info
+                  .col-xs-12(style='margin-top:15%')
+                    img.img-responsive.center-block.icono(src="/img/digi.png", alt="")
+                  
+
+                .col-sm-2.info
+                  .col-xs-12(style='margin-top:15%')
+                    img.img-responsive.center-block.icono(src="/img/par.png", alt="")
+
+
+
+                .col-sm-2.info(style='opacity:0.5;')
+                  .col-xs-12(style='margin-top:15%;')
+                    img.img-responsive.center-block.icono(src="/img/pillow_logo-04.png", alt="")
+
+
+            .col-md-12(style='text-align:center; color:#333;')        
+              p(style='opacity:0.5;').copyright &copy; 2014 #{store} Todos los derechos reservados.
+              
+
+
+
+
+
+
+
+
+
+
+        
+        
+
+
+   
+
+   
+
+
+    
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js", type="text/javascript")
+    script(src="/js/bootstrap.min.js" type='text/javascript')   
+    script.
+
+
+        $(function() {
+            $('.toggle-menu').click(function() {
+                toggleMenu();
+            });
+        });
+
+        function toggleMenu() {
+            if ($('#off-canvas-menu').hasClass('off-canvas-menu-open')) { 
+                               
+                $('#off-canvas-menu').removeClass('off-canvas-menu-open');
+                $('#off-canvas-menu').addClass('off-canvas-menu-closed');
+            } else {                
+                
+                $('#off-canvas-menu').removeClass('off-canvas-menu-closed');
+                $('#off-canvas-menu').addClass('off-canvas-menu-open');
+            }            
+        }
+        document.querySelector( ".toggle-btn" )
+          .addEventListener( "click", function() {
+            this.classList.toggle( "active" );
+          });
+
+
+    block scripts
+        
+      

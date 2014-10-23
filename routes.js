@@ -15,6 +15,71 @@ app.get('/Taller_oct4', function(req, res) {
 
 
 
+//---------------------- Camp Routes ----------------------
+app.get('/med', function(req, res) {
+	res.render('med'); 
+});
+
+
+app.get('/libertapp', function(req, res) {
+    res.render('libertapp');
+        
+});
+
+
+app.get('/tourist', function(req, res) {
+    res.render('tourist',{
+        title: 'tourist'
+    });
+});
+
+
+app.get('/servicios', function(req, res) {
+    res.render('servicios',{
+        title: 'Servicios'
+    });
+});
+
+app.get('/hv', function(req, res) {
+    res.render('hv',{
+        title: 'hv'
+    });
+});
+
+app.get('/fly', function(req, res) {
+    res.render('fly',{
+        title: 'Fly'
+    });
+});
+
+
+app.get('/sexxi', function(req, res) {
+    res.render('sexxi',{
+        title: 'sexxi'
+    });
+});
+
+app.get('/pub', function(req, res) {
+    res.render('pub',{
+        title: 'pub'
+    });
+});
+
+app.get('/cof', function(req, res) {
+    res.render('cof',{
+        title: 'cof'
+    });
+});
+
+app.get('/jai', function(req, res) {
+    res.render('jai',{
+        title: 'jai'
+    });
+});
+
+
+
+
 
 app.post('/contact',function(req, res) {
 
