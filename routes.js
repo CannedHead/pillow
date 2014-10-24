@@ -16,7 +16,7 @@ app.get('/Taller_oct4', function(req, res) {
 
 
 //---------------------- Camp Routes ----------------------
-app.get('/med', function(req, res) {
+app.get('/imagine2014antioquia', function(req, res) {
 	res.render('med'); 
 });
 
