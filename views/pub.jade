@@ -9,20 +9,20 @@ block content
             p.heroTittle THE PUBLISH COMPANY
 
     .container 
-        .col-xs-12
-            .col-md-2.col-md-offset-1.foto(style='text-align:center;')
+        .col-md-12
+            .col-sm-2.col-sm-offset-1.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/pub1.png", alt="")
                 p(style='margin-top:15%;') Santiago Agudelo
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/pub2.png", alt="")
                 p(style='margin-top:15%;') Marlon Cano
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/pub3.png", alt="")
                 p(style='margin-top:15%;') Jóse Arias
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/pub4.png", alt="")
                 p(style='margin-top:15%;') Valentina Paniagua
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/pub5.png", alt="")
                 p(style='margin-top:15%;') Diego Henao
 
@@ -30,8 +30,26 @@ block content
     
     .full(style= 'height:900px; text-align: center; ' )
         .container
-            .col-xs-12(style= 'margin-top:5%;')
-                iframe.ipod(src="https://app.conceptinbox.com/embed/5440a7ca66134c027e73798c" width='360' height='640' frameborder=0 scrolling='no' style='background-image:url(img/back)')
+            .col-sm-6.grupoEsp
+                img.img-responsive.logo(style = 'opacity:;' src="/img/The Publish Company-01.png") 
+                p.descripcion Pocos recursos para hacer publicidad? Para The Publish Company eso no es problema. 
+                p.descripcion Has crecer tu negocio a través de esta plataforma exclusivamente para los microempresarios de todos los municipios de antioquia. The Publish Company abre un espacio de publicidad y desarrolla un directorio de empresas. De esta manera hacemos más estrecha la relación de quien quiere comprar con quien quiere vender. 
+                hr
+                a.btn.btn-xs#plan(role="button", alt="Planear", data-toggle="modal", data-target="#planModal", href="#planModal",data-dismiss="modal") 
+                    span.glyphicon.glyphicon-play
+                    p VER PRESENTACIÓN
+                    
+                    
+
+            .col-sm-6.grupoEsp
+                iframe.ipod(src="https://app.conceptinbox.com/embed/5440a7ca66134c027e73798c" width='270' height='480' frameborder=0 scrolling='no')
             .frameBack
                 .circle
 
+            
+
+     <!-- Plan Modal -->
+    .modal.fade#planModal(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+        .modal-dialog
+                                
+                iframe(width='700' height='394' src="//www.youtube.com/embed/vXVGzUDykQk" frameborder=0 allowfullscreen)

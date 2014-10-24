@@ -46,7 +46,7 @@
   width:300px;
   z-index: 1031;
   height:100%;
-  margin-top: 50px; 
+  
   
 
   -webkit-transition: -webkit-transform .4s cubic-bezier(.16, .68, .43, .99);
@@ -592,6 +592,7 @@ select{
   background-color: #FFE700;
   height: 120px !important; 
   font-family:"camptonsemibold";
+  margin-top: 50px; 
 
   box-shadow: 0px 15px 15px rgba(0,0,0,0.2), 0px -2px 1px #fff;
   -webkit-transition: background-position 1s ease-out 0.3s;
@@ -645,6 +646,7 @@ select{
 .heroTittle{
 
 font-size: 3em; 
+color: #424242;
 
 
 }
@@ -734,6 +736,14 @@ font-size: 1.8em;
 
 
 }
+.grupoEsp{
+font-family: 'utsaahregular'; 
+font-size: 1.2em; 
+letter-spacing: 1px;
+margin-top: 5%; 
+
+}
+
 
 .half{
 
@@ -867,16 +877,20 @@ font-size: 2em;
 	width: auto; 
 }
 
+/* vista proyecto*/ 
 .frameBack{
   background-color: #393939; 
   -webkit-border-radius: 15px;
 -moz-border-radius: 15px;
 border-radius: 15px;
 
-height: 750px; 
-width: 420px; 
-margin-left: 31.5%; 
-margin-top: 2%; 
+
+
+
+height: 560px;
+width: 310px;
+margin-left: 61.3%; 
+margin-top: 7%; 
 
 box-shadow: 0px 7px 13px rgba(0,0,0,0.2), 0px 0px 0px #fff;
   -webkit-transition: background-position 1s ease-out 0.3s;
@@ -888,6 +902,7 @@ box-shadow: 0px 7px 13px rgba(0,0,0,0.2), 0px 0px 0px #fff;
 }
 
 .ipod{
+  margin-top: 8%; 
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 border-radius: 5px;
@@ -899,6 +914,12 @@ box-shadow: 0px 7px 13px rgba(0,0,0,0.2), 0px 0px 0px #fff;
   -ms-transition: background-position 1s ease-out 0.3s;
   transition: background-position 1s ease-out 0.3s;
 }
+
+.descripcion{
+  text-align: left; 
+  margin-left: 7%; 
+}
+
 
 .circle{
   height: 50px;
@@ -1086,6 +1107,18 @@ text-align: center !important;
   margin-bottom: 3% !important; 
 }
 
+/* PROYECTO */
+
+.frameBack{
+  margin-left: 53.2%;
+  margin-top: 10%; 
+
+}
+
+.ipod{
+  margin-top: 17%; 
+}
+
 
 
 
@@ -1127,7 +1160,7 @@ text-align: center !important;
 }
 
 .keep{
-font-size: 7.6em; 
+font-size: 7.2em; 
 text-align: center !important; 
 
 }
@@ -1161,8 +1194,18 @@ height: 700px !important;
   font-size: 2.5em; 
   padding: 10px; 
 }
+
+/* PROYECTO */
+
+.frameBack{
+  margin-left: 61.3%; 
+  margin-top: 7%;  
+
 }
 
+.ipod{
+  margin-top: 8%; 
+}
 
 
 }
