@@ -1128,7 +1128,9 @@ text-align: center !important;
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-
+.frameBack{
+  margin-left: 58.5%;
+}
 }
 
 
