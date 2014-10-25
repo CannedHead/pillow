@@ -922,8 +922,8 @@ box-shadow: 0px 7px 13px rgba(0,0,0,0.2), 0px 0px 0px #fff;
 
 
 .circle{
-  height: 50px;
-  width: 50px; 
+  height: 40px;
+  width: 40px; 
   background-color: #fff; 
 
 
@@ -931,8 +931,8 @@ box-shadow: 0px 7px 13px rgba(0,0,0,0.2), 0px 0px 0px #fff;
 -moz-border-radius: 25px;
 border-radius: 25px; 
 
-top:1263px;
-left: 48.5%; 
+top: 1146px;
+left: 69%; 
 position: absolute;
 opacity: 0.2;
 
