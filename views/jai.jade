@@ -9,32 +9,49 @@ block content
             p.heroTittle JAI ANTIOQUIA
 
     .container 
-        .col-xs-12
-            .col-md-2.foto(style='text-align:center;')
+        .col-md-12.espacio
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/jai1.png", alt="")
                 p(style='margin-top:15%;') David Cortés
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/jai2.png", alt="")
                 p(style='margin-top:15%;') Monica Ortíz
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/jai3.png", alt="")
                 p(style='margin-top:15%;') Estefanía Murillo
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/jai4.png", alt="")
                 p(style='margin-top:15%;') Elizabeth Patiño
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/jai5.png", alt="")
                 p(style='margin-top:15%;') Heylin Aguirre
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/jai6.png", alt="")
                 p(style='margin-top:15%;') Luis Martinez
 
-
-    
     .full(style= 'height:900px; text-align: center; ' )
         .container
-            .col-xs-12(style= 'margin-top:5%;')
-                iframe.ipod(src="https://app.conceptinbox.com/embed/54412ad366134ce821737992" width='360' height='640' frameborder=0 scrolling='no' style='background-image:url(img/back)')
+            .col-sm-6.grupoEsp
+                img.img-responsive.logo(style = 'opacity:;' src="/img/JaiAntioquia-01.png") 
+                p.descripcion En el año 2015, la gobernación de Antioquia terminara los 80 parques educativos en los diferentes municipios. La comunicación, estrategia y gestión de estos es fundamental. JAI ANTIOQUIA brinda toda la información,actividades,cursos y oportunidades de los parques educativos permitiendo a los habitantes de todo antioquia revisar toda la información acerca de un parque en especifico e inscribirse a cualquier curso que desee.
+                
+                hr
+                a.btn.btn-xs#jai(role="button", alt="Planear", data-toggle="modal", data-target="#jaiModal", href="#jaiModal",data-dismiss="modal") 
+                    span.glyphicon.glyphicon-play
+                    p VER PRESENTACIÓN   
+
+            .col-sm-6.grupoEsp
+                iframe.ipod(src="https://app.conceptinbox.com/embed/54412ad366134ce821737992" width='270' height='480' frameborder=0 scrolling='no')
             .frameBack
-                .circle
+
+         <!-- Plan Modal -->
+        .modal.fade#jaiModal(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+            .modal-dialog
+                                    
+                    iframe.video.center-block( src="//www.youtube.com/embed/6v1Qm9FOTEY" frameborder=0 allowfullscreen)
+        
+
+
+
+
 

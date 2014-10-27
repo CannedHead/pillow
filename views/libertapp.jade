@@ -9,29 +9,48 @@ block content
             p.heroTittle LIBERTAPP
 
     .container 
-        .col-xs-12
-            .col-md-2.col-md-offset-1.foto(style='text-align:center;')
+        .col-md-12.espacio
+            .col-sm-2.col-md-offset-1.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/libertad1.png", alt="")
                 p(style='margin-top:15%;') Santiago Parra
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/libertad2.png", alt="")
                 p(style='margin-top:15%;') Mateo Munera
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/libertad3.png", alt="")
                 p(style='margin-top:15%;') Salomé Loaiza
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/libertad4.png", alt="")
                 p(style='margin-top:15%;') Michael Álvarez
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/libertad5.png", alt="")
                 p(style='margin-top:15%;') Jorge Pulgarin
 
 
-    .full(style= 'height:900px; text-align: center; ' )
+
+    .full(style= 'height:900px; text-align: center;' )
         .container
-            .col-xs-12(style= 'margin-top:5%;')
-                iframe.ipod(src="https://app.conceptinbox.com/embed/5441251066134c8d21737965" width='360' height='640' frameborder=0 scrolling='no' style='background-image:url(img/back)')
+            .col-sm-6.grupoEsp
+                img.img-responsive.logo(style = 'opacity:;' src="/img/LibertApp.png") 
+                p.descripcion ¿Cuántas veces al día revisas whatsapp, instagram, twitter, faceook, etc ?¿O simplemente revisas tu teléfono por inercia? Estamos enganchados dia y noche a nuestro dispositivo. LibertApp es la mejor aplicación de Android y IOS para el seguimiento y toma de control de los hábitos de uso y adicción los Smartphone. Monitorea el uso de las aplicaciones que consultas diariamente, si te estas excediendo te manda notificaciones informativas sobre temas relacionados a los efectos de la adicción al celular y  temas curiosos que te asombrarán.  
+                hr
+                a.btn.btn-xs#libertapp(role="button", alt="Planear", data-toggle="modal", data-target="#libertappModal", href="#libertappModal",data-dismiss="modal") 
+                    span.glyphicon.glyphicon-play
+                    p VER PRESENTACIÓN   
+
+            .col-sm-6.grupoEsp
+                iframe.ipod(src="https://app.conceptinbox.com/embed/5441251066134c8d21737965" width='270' height='480' frameborder=0 scrolling='no')
             .frameBack
-                .circle
 
 
+
+
+
+         <!-- Plan Modal -->
+        .modal.fade#libertappModal(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+            .modal-dialog
+                                    
+                    iframe.video.center-block( src="//www.youtube.com/embed/gkGflRRe6Q0" frameborder=0 allowfullscreen)
+
+
+ 

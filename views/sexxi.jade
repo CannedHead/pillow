@@ -9,29 +9,49 @@ block content
             p.heroTittle SEXXI
 
     .container 
-        .col-xs-12
-            .col-md-2.col-md-offset-1.foto(style='text-align:center;')
+        .col-md-12.espacio
+            .col-sm-2.col-md-offset-1.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/sexxi1.png", alt="")
                 p(style='margin-top:15%;') Gabriel Martínez
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/sexxi2.png", alt="")
                 p(style='margin-top:15%;') Jonathan Suaza
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/sexxi3.png", alt="")
                 p(style='margin-top:15%;') Carolina Zapata
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/sexxi4.png", alt="")
                 p(style='margin-top:15%;') Natalia Tobón
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/sexxi5.png", alt="")
                 p(style='margin-top:15%;') Edwin Flórez
 
-
-    
     .full(style= 'height:900px; text-align: center; ' )
         .container
-            .col-xs-12(style= 'margin-top:5%;')
-                iframe.ipod(src="https://app.conceptinbox.com/embed/5440c06066134c210473799e" width='360' height='640' frameborder=0 scrolling='no' style='background-image:url(img/back)')
+            .col-sm-6.grupoEsp
+                img.img-responsive.logo(style = 'opacity:;' src="/img/SeXXI-01.png") 
+                p.descripcion Juega y vive casi en carne propia la responsabilidad de ser mamá antes de serlo realmente. Cuida a tu hijo, responde por el, entiende las diferentes responsabilidades y date cuenta que ser mamá no es cosa de niños ni de juegos. 
+                
+                hr
+                a.btn.btn-xs#sexxi(role="button", alt="Planear", data-toggle="modal", data-target="#sexxiModal", href="#sexxiModal",data-dismiss="modal") 
+                    span.glyphicon.glyphicon-play
+                    p VER PRESENTACIÓN   
+
+            .col-sm-6.grupoEsp
+                iframe.ipod(src="https://app.conceptinbox.com/embed/5440c06066134c210473799e" width='270' height='480' frameborder=0 scrolling='no')
             .frameBack
-                .circle
+
+         <!-- Plan Modal -->
+        .modal.fade#sexxiModal(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+            .modal-dialog
+                                    
+                    iframe.video.center-block( src="//www.youtube.com/embed/C3j4XawqdAY" frameborder=0 allowfullscreen)
+
+
+    
+
+
+
+
+
 

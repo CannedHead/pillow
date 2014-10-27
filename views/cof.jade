@@ -1,6 +1,5 @@
 extend layout2
 block content
-    
     .full.titulo(style= 'height:80px; text-align: center; ' )
         .col-xs-12(style= 'margin-top:2%;')
             a(href='/imagine2014antioquia').heroTittle CAMPAMENTO IMAGINE ANTIOQUIA 2014
@@ -10,31 +9,45 @@ block content
             p.heroTittle COFFAGER
 
     .container 
-        .col-xs-12
-            .col-md-2.col-md-offset-1.foto(style='text-align:center;')
+        .col-md-12.espacio
+            .col-sm-2.col-sm-offset-1.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/cof1.png", alt="")
                 p(style='margin-top:15%;') Juan M. Calle
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/cof2.png", alt="")
                 p(style='margin-top:15%;') Andres Alzáte
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/cof3.png", alt="")
                 p(style='margin-top:15%;') David Vélez
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/cof4.png", alt="")
                 p(style='margin-top:15%;') Juan Agualimpia
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/cof5.png", alt="")
                 p(style='margin-top:15%;') Yorman Murillo
 
 
-    
     .full(style= 'height:900px; text-align: center; ' )
         .container
-            .col-xs-12(style= 'margin-top:5%;')
-                iframe.ipod(src="https://app.conceptinbox.com/embed/5440b24666134cc47f737981" width='360' height='640' frameborder=0 scrolling='no' style='background-image:url(img/back)')
+            .col-sm-6.grupoEsp
+                img.img-responsive.logo(style = 'opacity:;' src="/img/Coffager-01.png") 
+                p.descripcion A Veces administrar un negocio se vuelve caótico por falta de herramientas y conocimiento. Coffager mejora  el proceso productivo del cafe. Ofrece a los agricultores herramientas administrativas e informativas de temas cruciales para el éxito en su operación agrícola. Con Coffager tomas el control de tu negocio cafetero. 
+               
+                hr
+                a.btn.btn-xs#cof(role="button", alt="Planear", data-toggle="modal", data-target="#cofModal", href="#cofModal",data-dismiss="modal") 
+                    span.glyphicon.glyphicon-play
+                    p VER PRESENTACIÓN
+
+
+            .col-sm-6.grupoEsp
+                iframe.ipod(src="https://app.conceptinbox.com/embed/5440b24666134cc47f737981" width='270' height='480' frameborder=0 scrolling='no')
             .frameBack
-                .circle
+
 
                    
+         <!-- Plan Modal -->
+        .modal.fade#cofModal(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+            .modal-dialog
+                                    
+                    iframe.video.center-block( src="//www.youtube.com/embed/foFP13sIGIw" frameborder=0 allowfullscreen)
 

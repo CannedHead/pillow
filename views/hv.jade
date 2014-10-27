@@ -9,32 +9,54 @@ block content
             p.heroTittle HAV Tourism
 
     .container 
-        .col-xs-12
-            .col-md-2.foto(style='text-align:center;')
+        .col-md-12.espacio
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/hv7.png", alt="")
                 p(style='margin-top:15%;') Salomé Piedrahita
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/hv2.png", alt="")
                 p(style='margin-top:15%;') Germán Sánchez 
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/hv3.png", alt="")
                 p(style='margin-top:15%;') Richard Medina
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/hv4.png", alt="")
                 p(style='margin-top:15%;') Julián Echeverry
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/hv5.png", alt="")
                 p(style='margin-top:15%;') Santiago Botero
-            .col-md-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/hv6.png", alt="")
                 p(style='margin-top:15%;') Camila Molina 
 
+    
+
     .full(style= 'height:900px; text-align: center; ' )
         .container
-            .col-xs-12(style= 'margin-top:5%;')
-                iframe.ipod(src="https://app.conceptinbox.com/embed/5440d9de66134cdd09737969" width='360' height='640' frameborder=0 scrolling='no' style='background-image:url(img/back)')
+            .col-sm-6.grupoEsp
+                img.img-responsive.logo(style = 'opacity:;' src="/img/HavTourism-01.png") 
+                p.descripcion ¿Por qué sitios tan hermosos para visitar no tienen turismo? HAV Tourism crea una cultura del turismo donde aprendemos cómo hacer turismo, donde hacerlo y como venderlo. Asi todo tipo de lugares tendrán un espacio de divulgación y presencia, acompañado de herramientas para mejorar las actividades turísticas que ofrecen al visitante. 
+                
+                hr
+                a.btn.btn-xs#hv(role="button", alt="Planear", data-toggle="modal", data-target="#hvModal", href="#hvModal",data-dismiss="modal") 
+                    span.glyphicon.glyphicon-play
+                    p VER PRESENTACIÓN   
+
+            .col-sm-6.grupoEsp
+                iframe.ipod(src="https://app.conceptinbox.com/embed/5440d9de66134cdd09737969" width='270' height='480' frameborder=0 scrolling='no')
             .frameBack
-                .circle
+               
+
+            
+
+         <!-- Plan Modal -->
+        .modal.fade#hvModal(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+            .modal-dialog
+                                    
+                    iframe.video.center-block( src="//www.youtube.com/embed/UPxBom5Ka9A" frameborder=0 allowfullscreen)
+
+
+
 
 
     

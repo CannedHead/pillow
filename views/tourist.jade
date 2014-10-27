@@ -1,39 +1,57 @@
 extend layout2
 block content
     .full.titulo(style= 'height:80px; text-align: center; margin-top:50px; ' )
-        .col-xs-12(style= 'margin-top:2%;')
-            a(href='/imagine2014antioquia').heroTittle CAMPAMENTO IMAGINE ANTIOQUIA 2014
+        .col-xs-12(style= 'margin-top:2%;')    
+            a.heroTittle(href='/imagine2014antioquia') CAMPAMENTO IMAGINE ANTIOQUIA 2014
 
     .full.titulo2(style= 'height:80px; text-align: center; ' )
         .col-xs-12(style= 'margin-top:2%;')
             p.heroTittle THE TOURISM GAME
 
     .container 
-        .col-xs-12
-            .col-xs-2.col-md-offset-1.foto(style='text-align:center;')
+        .col-md-12.espacio
+            .col-sm-2.col-md-offset-1.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/tourist1.png", alt="")
                 p(style='margin-top:15%;') Johan S. Agudelo
-            .col-xs-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/tourist2.png", alt="")
                 p(style='margin-top:15%;') Cristian Moncada
-            .col-xs-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/tourist3.png", alt="")
                 p(style='margin-top:15%;') Alexis Valencia
-            .col-xs-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/tourist4.png", alt="")
                 p(style='margin-top:15%;') Yeison Builes
-            .col-xs-2.foto(style='text-align:center;')
+            .col-sm-2.foto(style='text-align:center;')
                 img.circle-image.img-responsive.center-block(src="/img/tourist5.png", alt="")
                 p(style='margin-top:15%;') Edwin Álvarez
 
-
-    
     .full(style= 'height:900px; text-align: center; ' )
         .container
-            .col-xs-12(style= 'margin-top:5%;')
-                iframe.ipod(src="https://app.conceptinbox.com/embed/5440cae066134ce6067379b2" width='360' height='640' frameborder=0 scrolling='no' style='background-image:url(img/back)')
+            .col-sm-6.grupoEsp
+                img.img-responsive.logo(style = 'opacity:;' src="/img/touristgame.png") 
+                p.descripcion Eres un guía turístico que vive en Antioquia? o eres un turista que quiere conocerla? No importa quien seas, con The Tourism Game vas a descubrir una nueva forma de hacer turismo. Donde descubres hermosos lugares a través de juegos y retos, teniendo a la mano la mejor información y accesibilidad a los mejores guías turísticos locales. 
+                
+                hr
+                a.btn.btn-xs#tourist(role="button", alt="Planear", data-toggle="modal", data-target="#touristModal", href="#touristModal",data-dismiss="modal") 
+                    span.glyphicon.glyphicon-play
+                    p VER PRESENTACIÓN   
+
+            .col-sm-6.grupoEsp
+                iframe.ipod(src="https://app.conceptinbox.com/embed/5440cae066134ce6067379b2" width='270' height='480' frameborder=0 scrolling='no')
             .frameBack
-                .circle
+
+         <!-- Plan Modal -->
+        .modal.fade#touristModal(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+            .modal-dialog
+                                    
+                    iframe.video.center-block( src="//www.youtube.com/embed/FApBkT9V64k" frameborder=0 allowfullscreen)
+
+
+    
+
+
+
 
 
    
