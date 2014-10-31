@@ -299,7 +299,11 @@
   top:12px;
 }
 
+.btnVideo{
 
+margin-top: 7.5%;
+opacity: 0.5;
+}
 
 .line{
   height: 50px; 
@@ -1290,5 +1294,6 @@ height: 700px !important;
 .video{
   width: 700px; 
   height: 394px; 
+  margin-top: 35%; 
 }
 }

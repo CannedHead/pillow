@@ -18,12 +18,17 @@ html(lang="en")
       
     navbar.line.navbar-fixed-top
         .container-fluid
-            .navbar-header
-               
-                .pulll-left
-                    a.toggle-menu.toggle-btn#menu-btn
-                        span
+            .navbar-header.col-xs-12
+               .col-xs-1
+                    .pull-left
+                        a.toggle-menu.toggle-btn#menu-btn
+                            span
+                .col-md-1.pull-right
+                    a.btnVideo.btn.btn-xs#libertapp(role="button", alt="Planear", data-toggle="modal", data-target="#libertappModal", href="#libertappModal",data-dismiss="modal") 
+                        span.glyphicon.glyphicon-play
+                        p VIDEO RESUMEN 
                     
+                        
                
     <!-- Off canvas Menu -->
     nav.off-canvas-menu.off-canvas-menu-closed#off-canvas-menu
