@@ -1274,7 +1274,7 @@ height: 700px !important;
 }
 
 .logo-menu{
-  margin-top: 0%; 
+  margin-top: -15%; 
 }
 
 /* PROYECTO */
@@ -1296,4 +1296,6 @@ height: 700px !important;
   height: 394px; 
   margin-top: 35%; 
 }
+
+
 }
