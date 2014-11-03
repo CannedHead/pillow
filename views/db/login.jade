@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title CRM Pilow S.A.S
+
+    meta(name="description",content="Compensate - Siembra un arbol")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    link(href="favicon.png" rel="shortcut icon" type="image/png")  
+    link(href="/css/bootstrap.css", rel="stylesheet")
+    link(href="/css/styles.css", rel="stylesheet")
+    link(href="/css/db.css", rel="stylesheet")
+
+    
+  body.dbBody
+    .container
+        .col-md-4.col-md-offset-4.loginDb
+            .panel.panel-default.signupPanel                    
+                .panel-body
+                    img.logo(src="/img/pillow_logo-02.svg")
+                    <!-- form(action="/loginDb",method="post", role="form" ) -->
+                    .form-group
+                        input(name="email", type="email", placeholder="E-mail")
+                    .form-group
+                        input(name="password", type="password", placeholder="Contraseña")
+                    .form-group
+                        <!-- button.btn.btn-info.btn-block(type="submit") Ingresar -->
+                        a.btn.loginDbBtn.btn-block(type="submit" href="/db/dash") INGRESAR
+                   
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    script(src="/js/bootstrap.min.js")
+
+   

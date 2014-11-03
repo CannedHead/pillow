@@ -13,6 +13,20 @@ app.get('/Taller_oct4', function(req, res) {
 	res.render('landing'); 
 });
 
+//---------------------- DB CRM ----------------------
+app.get('/db', function(req, res) {
+	res.render('db/login'); 
+});
+
+app.get('/db/dash', function(req, res) {
+	res.render('db/dashboard'); 
+});
+
+app.get('/db/new', function(req, res) {
+	res.render('db/new'); 
+});
+
+
 
 
 //---------------------- Camp Routes ----------------------
@@ -76,6 +90,8 @@ app.get('/jai', function(req, res) {
         title: 'jai'
     });
 });
+
+
 
 
 
@@ -148,6 +164,12 @@ app.post('/taller',function(req, res) {
 	});		
 
 });
+
+
+
+
+
+
 
 
 

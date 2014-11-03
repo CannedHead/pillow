@@ -1,0 +1,51 @@
+extend layoutdb
+block content
+
+
+    .full.breadDb
+        .col-xs-12
+            p Dashboard New Usuario
+    
+    .container 
+        .col-md-12(style="margin-top:5%")
+            .col-md-5
+                .panel.panel-default  
+                    .panel-body.panelDb
+                        .form-group
+                            label.control-label Eje Comercial
+                            select.form-control(name=name)
+                                option(value='--') ---
+                                option(value='' selected=''== valor) PillowAcad
+                                option(value='' selected=''== valor) PillowComp
+                                option(value='' selected=''== valor) PillowToge
+                        .form-group
+                            label.control-label Sub Eje 
+                            select.form-control(name=name)
+                                option(value='--') ---
+                                option(value='' selected=''== valor) Generico
+                        .form-group
+                            label.control-label Origen
+                            input.form-control(type="text")
+
+            .col-md-7
+                .panel.panel-default  
+                    .panel-body.panelDb
+                        .form-group
+                                label.control-label Nombres
+                                input.form-control(type="text")
+                        .form-group
+                                label.control-label Apellidos
+                                input.form-control(type="text")
+                        .form-group
+                                label.control-label Email
+                                input.form-control(type="text")
+                        .form-group
+                                label.control-label Telefono
+                                input.form-control(type="text")
+
+                        .form-group
+                            <!-- button.btn.btn-info.btn-block(type="submit") Ingresar -->
+                            a.btn.newDbBtn.btn-block(type="submit" href="/db/dash") GUARDAR
+                        
+
+                            
