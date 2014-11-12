@@ -27,33 +27,32 @@ html(lang="en")
     script(type="text/javascript" src="/js/form.min.js")
     script(type="text/javascript" src="/js/wide-video.js")    
     
-  body.landing
-    
-    .col-md-3.col-md-offset-8.formWidth
-        .col-md-12.formTaller
-            p.descuento REGÍSTRATE Y RECIBE UN DESCUENTO DEL 25%
-        .col-md-12.formBody
+  body.landingGenerica
 
-            .col-md-12
+        section#screen1
+            .col-md-12.column1
+                    
+                .col-md-4.col-md-offset-4
+                    img.img-responsive.center-block(src="/img/pillow_logo-04.png" style="opacity:0.5;")
+                        
+                    form.formulario(method="post" action= "/pillowTalk")
+                        br    
+                        .form-group
+                            input.formInput(type="text" name="nombre" placeholder="Nombre" required)
+                        br
+                        .form-group
+                            input.formInput(type="email" name="email" placeholder="E-mail" required)
+                        br
+                        .form-group
+                            input.formInput(type="numbers" name="phone" placeholder="Celular" required)
+                            input(type="text" name="ejeComercial" value="PillowAcad" style="display:none;")
+                            input(type="text" name="subEje" value="PillowTalks" style="display:none;")
+                            input(type="text" name="origen" value="PillowTalkcEnsenanza" style="display:none;")
 
-                form.formulario(method="post" action= "/taller")
-                    br    
-                    .form-group
-                        input.form-control.form-control2(type="text" name="nombre" placeholder="Nombre" required)
-                    br
-                    .form-group
-                        input.form-control.form-control2(type="email" name="email" placeholder="E-mail" required)
-                    br
-                    .form-group
-                        input.form-control.form-control2(type="numbers" name="phone" placeholder="Celular" required)
-                    br
-                    .form-group
-                    input.boton.form-control.op(style='font-family:"camptonsemibold";font-size:1em; height:80px;margin-bottom: 3% ; background:#EC008C; color:#fff;' type="submit" value="$15.000" )
-        .col-md-12.foot.form-group
-            a(href='http://pillow.com.co' target="blank")
-                p www.pillow.com.co
-            p.mar(style='margin-top:-8%;') educatio@pillow.com.co
-            p.mar(style='margin-top:-8%;') (+57) 311 865 8561 - (+57) 320 287 0823 
+                        br
+                        .form-group
+                        input.boton.form-control.op(style='font-family:"camptonsemibold";font-size:1em; height:80px;margin-bottom: 3% ; background:#333; color:#fff;' type="submit" value="Registrar" )
+          
 
 
    

@@ -86,11 +86,9 @@ margin: 1% auto 0;
 
 }
 
-.landing{
-    background-image:url("http://s25.postimg.org/bopsz3h1b/back.png") !important;
-    background-color: #000 !important;
-    background-color: #000 !important;
-    background-size: 1620px auto;
+.landingGenerica{
+      background-color: #fff !important;
+   
 }
 
 
@@ -108,9 +106,16 @@ margin: 1% auto 0;
 
 }
 
+.column1{
+    height: 100%; 
+    background-color: #fff;  
+    padding: 3%; 
+    padding-top: 8%; 
+}
+
 .formBody{
     height:400px; 
-    background:rgba(255, 255, 255, 0.2); 
+    background: #D8D8D8; 
     
 }
 
@@ -118,10 +123,23 @@ margin: 1% auto 0;
   margin-top: 1%; 
 }
 
-.descuento{
-    margin-top:6%;
+#screen1{
+    background-color: #333;
+    height: 100%;  
 }
 
+.formInput{
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 6px 12px;
+    font-size: 15px;
+    line-height: 1.42857;
+    color: #888;
+    background-color: #DDDDDD;
+    background-image: none;
+
+}
 
 .foot{
     text-align: right; 
@@ -293,8 +311,7 @@ text-align: justify;
 }
 
 .form-control2{
-    background-color: #fff !important;
-    color:#888 !important;
+    
 }
 
 .formTaller{

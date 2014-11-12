@@ -1,5 +1,5 @@
 var User = require('./models/landing.js');
-var Taller = require('./models/taller.js');
+var userPillowTalk  = require('./models/pillowTalk.js');
 var http = require('http');
 
 
@@ -9,9 +9,10 @@ app.get('/', function(req, res) {
 	res.render('index'); 
 });
 
-app.get('/Taller_oct4', function(req, res) {
+app.get('/pillowTalk', function(req, res) {
 	res.render('landing'); 
 });
+
 
 //---------------------- DB CRM ----------------------
 app.get('/db', function(req, res) {
@@ -129,7 +130,10 @@ app.post('/contact',function(req, res) {
 });
 
 
-app.post('/taller',function(req, res) {
+
+
+
+app.post('/pillowTalk',function(req, res) {
 
 	if (req.body.nombre === undefined) {
 		console.log('missing parameter:first_name');
@@ -139,23 +143,40 @@ app.post('/taller',function(req, res) {
 		console.log('missing parameter:email');
 		return next("email not found")
 	}
- 	if (req.body.phone === undefined ) {
-		console.log('missing parameter:phone');
-		return next("Phone not found")
+
+	if (req.body.phone === undefined ) {
+		console.log('missing parameter:email');
+		return next("email not found")
+	}
+	if (req.body.ejeComercial === undefined ) {
+		console.log('missing parameter:ejeComercial');
+		return next("ejeComercial not found")
+	}
+	if (req.body.subEje === undefined ) {
+		console.log('missing parameter:subEje');
+		return next("subEje not found")
+	}
+	if (req.body.origen === undefined ) {
+		console.log('missing parameter:origen');
+		return next("origen not found")
 	}
 
 
-	var taller = new Taller({
+ 	
+	var user = new userPillowTalk({
 		name:req.body.nombre,
 		email:req.body.email,
-		phone:req.body.phone
+		phone:req.body.phone,
+		ejeComercial:req.body.ejeComercial,
+		subEje:req.body.subEje,
+		origen:req.body.origen
+
 	});
 
-
-	taller.save(function(err) {
+	user.save(function(err) {
 		if(!err) {
-			console.log('New userTaller has been created');		
-			res.redirect('/Taller_oct4');
+			console.log('New user has been created');		
+			res.redirect("/pillowTalk");
 
 		} else {
 			console.log('ERROR: ' + err);
@@ -164,8 +185,6 @@ app.post('/taller',function(req, res) {
 	});		
 
 });
-
-
 
 
 
