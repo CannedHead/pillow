@@ -8,3 +8,5 @@ var landingSchema = mongoose.Schema({
 });
 
 module.exports = mongoose.model('Landing', landingSchema);
+
+

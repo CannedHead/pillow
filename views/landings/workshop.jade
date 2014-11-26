@@ -1,0 +1,152 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title PILLOW - Education will set you FREE
+    meta(name="description",content="Pillow - Sigue tus suenos")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    meta(property="og:type" content="website")
+    meta(property="og:title" content="Pillow - La educación te hara libre")
+    meta(property="og:image" content="http://s5.postimg.org/hmand1k5j/Logo_Pillow_201px_x_201px_01.png")
+    meta(property="og:description" content="Somos una organización que cree que la educación libera. Creemos que formar individuos capaces de afrontar los retos del mundo que está por venir es lo que garantizará una sociedad con mayor riqueza para todos. La formación y la educación son las bases para el desarrollo de este país, de esta forma Pillow apoya desde sus dos líneas de negocio: Pillow Education y Pillow Company al desarrollo de Colombia, latinoamérica y el mundo.")
+    meta(property="og:url" content="http://www.pillow.com.co")
+   
+
+    link(href="img/Favicon.ico" rel="shortcut icon" type="image/x-icon")  
+    link(href="/css/bootstrap.css", rel="stylesheet")
+    link( rel="stylesheet" href="/css/normalize.min.css" type="text/css")
+    link( rel="stylesheet" href="/css/grid.min.css" type="text/css" )
+    link( rel="stylesheet" href="/css/style.min.css" type="text/css")
+    link(href="/css/styles.css", rel="stylesheet")
+
+  
+    
+  body.landingGenerica
+
+        section#screen1
+            .col-md-12.column1
+                    
+                .col-md-4.col-md-offset-4
+                    img.img-responsive.center-block(src="/img/pillow_logo-04.png" style="opacity:0.5;")
+                        
+                    form.formulario(method="post" action= "/pillowWorkshop")
+                        br    
+                        .form-group
+                            input.formInput(type="text" name="nombre" placeholder="Nombre" required)
+                         br    
+                        .form-group
+                            input.formInput(type="text" name="apellido" placeholder="Apellido" required)
+                        br
+                        .form-group
+                            input.formInput(type="email" name="email" placeholder="E-mail" required)
+                        br
+                        .form-group
+                            input.formInput(type="numbers" name="phone" placeholder="Celular" required)
+                            input(type="text" name="ejeComercial" value="PillowComp" style="display:none;")
+                            input(type="text" name="subEje" value="PillowCompWorkshops" style="display:none;")
+                            input(type="text" name="origen" value="PillowWorkshopBinnakle" style="display:none;")
+                            input(type="text" name="Status" value="Prospecto" style="display:none;")
+
+                        br
+                        .form-group
+                        input.boton.form-control.op(style='font-family:"camptonsemibold";font-size:1em; height:80px;margin-bottom: 3% ; background:#333; color:#fff;' type="submit" value="Registrar" )
+          
+
+
+   
+            
+        
+
+   
+
+       
+
+
+
+           
+        
+
+                    
+        
+        script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+        script(src="//www.google-analytics.com/analytics.js" async="")
+            
+        script.
+            $(document).ready(function() {
+                $("#loader").fadeOut();
+                $("#loading").fadeOut();
+            });
+            
+            // Remove no-script background image
+            document.body.style.backgroundImage = 'none';
+
+            // Avoid cropped background when the page has y-overflow
+            fixBackgroundHeight();
+
+            window.onresize = function()
+            {
+                var wh = $(window).height();
+                var ww = $(window).width();
+                var ratio = wh/ww;
+
+                // Avoid cropped background when the page has y-overflow
+                fixBackgroundHeight();
+
+                // Resize the background items
+                if(!mobileCheck())
+                {
+                    sizeVideoBg(ratio);
+                    sizeVideo(ratio);
+                }
+                else
+                {
+                    sizeImage(ratio);
+                }
+            };
+
+            // Load first video
+            loadMediaFirst();
+
+            // Waits till the page ends loading
+            $(window).bind('load', function()
+            {
+                // Avoid cropped background when the page has y-overflow
+                fixBackgroundHeight();
+
+                // Start to load the assets
+                loadMediaSecond();
+
+                setTimeout("first_slide_ocurred = true;", 4300);
+
+                setTimeout(function()
+                {
+                    if(first_video_loaded && second_video_loaded)
+                    {
+                        console.log('Enough bandwidth to load videos');
+                        enough_bw = true;
+                    }
+                    else
+                    {
+                        $('video').html('');
+                    }
+                }, 4600);
+
+                if(!mobileCheck())
+                {
+                    loopVideo();
+                }
+                else
+                {
+                    loopImage();
+                }
+            });
+            
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-50689634-1', 'pillow.com.co');
+            ga('send', 'pageview');
+

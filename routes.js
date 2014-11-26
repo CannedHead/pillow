@@ -1,5 +1,6 @@
 var User = require('./models/landing.js');
-var userPillowTalk  = require('./models/pillowTalk.js');
+var userPillowTalk  = require('./models/pillowClient.js');
+var userPillowWorkshop  = require('./models/pillowClient.js');
 var http = require('http');
 
 
@@ -10,7 +11,11 @@ app.get('/', function(req, res) {
 });
 
 app.get('/pillowTalk', function(req, res) {
-	res.render('landing'); 
+	res.render('landings/talk'); 
+});
+
+app.get('/pillowWorkshop', function(req, res) {
+	res.render('landings/workshop'); 
 });
 
 
@@ -136,9 +141,15 @@ app.post('/contact',function(req, res) {
 app.post('/pillowTalk',function(req, res) {
 
 	if (req.body.nombre === undefined) {
-		console.log('missing parameter:first_name');
+		console.log('missing parameter:nombre');
 		return next("first_name not found")
 	}
+
+	if (req.body.apellido === undefined) {
+		console.log('missing parameter:apellido');
+		return next("apellido not found")
+	}
+
 	if (req.body.email === undefined ) {
 		console.log('missing parameter:email');
 		return next("email not found")
@@ -161,15 +172,21 @@ app.post('/pillowTalk',function(req, res) {
 		return next("origen not found")
 	}
 
+	if (req.body.origen === undefined ) {
+		console.log('missing parameter:origen');
+		return next("status not found")
+	}
 
  	
 	var user = new userPillowTalk({
-		name:req.body.nombre,
+		nombre:req.body.nombre,
+		apellido:req.body.apellido,
 		email:req.body.email,
 		phone:req.body.phone,
 		ejeComercial:req.body.ejeComercial,
 		subEje:req.body.subEje,
-		origen:req.body.origen
+		origen:req.body.origen,
+		Status:req.body.Status
 
 	});
 
@@ -185,6 +202,75 @@ app.post('/pillowTalk',function(req, res) {
 	});		
 
 });
+
+
+app.post('/pillowWorkshop',function(req, res) {
+
+	if (req.body.nombre === undefined) {
+		console.log('missing parameter:nombre');
+		return next("first_name not found")
+	}
+
+	if (req.body.apellido === undefined) {
+		console.log('missing parameter:apellido');
+		return next("apellido not found")
+	}
+
+	if (req.body.email === undefined ) {
+		console.log('missing parameter:email');
+		return next("email not found")
+	}
+
+	if (req.body.phone === undefined ) {
+		console.log('missing parameter:email');
+		return next("email not found")
+	}
+	if (req.body.ejeComercial === undefined ) {
+		console.log('missing parameter:ejeComercial');
+		return next("ejeComercial not found")
+	}
+	if (req.body.subEje === undefined ) {
+		console.log('missing parameter:subEje');
+		return next("subEje not found")
+	}
+	if (req.body.origen === undefined ) {
+		console.log('missing parameter:origen');
+		return next("origen not found")
+	}
+
+	if (req.body.origen === undefined ) {
+		console.log('missing parameter:origen');
+		return next("status not found")
+	}
+
+ 	
+	var user = new userPillowWorkshop({
+		nombre:req.body.nombre,
+		apellido:req.body.apellido,
+		email:req.body.email,
+		phone:req.body.phone,
+		ejeComercial:req.body.ejeComercial,
+		subEje:req.body.subEje,
+		origen:req.body.origen,
+		Status:req.body.Status
+
+	});
+
+	user.save(function(err) {
+		if(!err) {
+			console.log('New user has been created');		
+			res.redirect("/pillowWorkshop");
+
+		} else {
+			console.log('ERROR: ' + err);
+			res.redirect('/'); 
+		}
+	});		
+
+});
+
+
+
 
 
 
